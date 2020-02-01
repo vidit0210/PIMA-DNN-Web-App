@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>PIMA</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Predict Diabetes</h1>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Pregnancies </span>
+        </div>
+        <input
+          type="number"
+          class="form-control Pregnancies"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Glucose</span>
+        </div>
+        <input
+          type="number"
+          class="form-control Glucose"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">BloodPressure</span>
+        </div>
+        <input
+          type="number"
+          class="form-control BloodPressure"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">SkinThickness</span>
+        </div>
+        <input
+          type="number"
+          class="form-control SkinThickness"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Insulin</span>
+        </div>
+        <input
+          type="number"
+          class="form-control Insulin "
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">BMI</span>
+        </div>
+        <input
+          type="number"
+          class="form-control BMI"
+          aria-label="Username "
+          aria-describedby="basic-addon1"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"
+            >DiabetesPedigreeFunction</span
+          >
+        </div>
+        <input
+          type="number"
+          class="form-control DiabetesPedigreeFunction"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Age</span>
+        </div>
+        <input
+          type="number"
+          class="form-control Age"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary btn-lg btn-block"
+        id="submit"
+      >
+        Submit
+      </button>
+
+      <h2 id="result"></h2>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
